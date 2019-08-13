@@ -17,12 +17,14 @@ class Header extends Component {
           borderBottom: '2px solid #00285e'
         }}
       >
-        <Toolbar style={{display:'flex'}}>
-          <div styles={{flexGrow: 1}}>
-            <div className="header_logo">
+        <Toolbar style = {{display:'flex'}}>
+          <div style = {{flexGrow: 1}}>
+            <div className = "header_logo">
               <CityLogo
                 linkTo='/'
-                link={true}
+                link = {true}
+                width = '70px'
+                height = '70px'
               />
             </div>
           </div>
