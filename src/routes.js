@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Layout from './HighOrderComponents/Layout'
+import { Switch, Route }
 
 const Routes = (props) => {
   return (
     <Layout>
-      second line
+      
     </Layout>
   )
 }
