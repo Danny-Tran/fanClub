@@ -17,23 +17,23 @@ class Header extends Component {
           borderBottom: '2px solid #00285e'
         }}
       >
-        <Toolbar style = {{display:'flex'}}>
-          <div style = {{flexGrow: 1}}>
-            <div className = "header_logo">
+        <Toolbar style={{display:'flex'}}>
+          <div style={{flexGrow: 1}}>
+            <div className="header_logo">
               <CityLogo
                 linkTo='/'
-                link = {true}
-                width = '70px'
-                height = '70px'
+                link={true}
+                width='70px'
+                height='70px'
               />
             </div>
           </div>
 
-          <Link to ='/the_team'>
+          <Link to='/the_team'>
             <Button color='inherit'>THE TEAM</Button>
           </Link>
 
-          <Link to ='/the_matches'>
+          <Link to='/the_matches'>
             <Button color='inherit'>MATCHES</Button>
           </Link>
 
