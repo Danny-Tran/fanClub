@@ -7,13 +7,25 @@ class Stripe extends Component {
   state = {
     stripes:[
       {
-        background:'#98c5e9'
+        background:'#98c5e9',
+        left:120,
+        rotate:25,
+        top:-260,
+        delay:0
       },
       {
-        background:'#ffffff'
+        background:'#ffffff',
+        left:360,
+        rotate:25,
+        top:-397,
+        delay:200
       },
       {
-        background:'#98c5e9'
+        background:'#98c5e9',
+        left:600,
+        rotate:25,
+        top:-498,
+        delay:400
 
       }
     ]
@@ -26,19 +38,26 @@ class Stripe extends Component {
         show={true}
 
         start={{
-          background:'#ffffff'
+          background:'#ffffff',
+          opacity:0,
+          left:0
         }}
-        
+
         enter={{
-          background:[stripe.background]
+          background:[stripe.background],
+          opacity:[1],
+          left:[stripe.left],
+          timing: {delay:500, duration:200, ease:easePolyOut}
         }}
       >        
-        {({background})=> {
+        {({opacity,left,background})=> {
           return(
             <div
               className='stripe'
               style={{
-                background
+                background,
+                opacity,
+                transform:`rotate(0deg) translate(${left}px,0px)`
               }}
             ></div>
           )
