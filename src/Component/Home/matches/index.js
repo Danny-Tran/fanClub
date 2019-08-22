@@ -13,7 +13,7 @@ const MatchesHome = () => {
           Matches
         </Tag>
 
-        BLOCK
+        UP COMING MATCHES
 
         <Tag
           bck='#ffffff'
