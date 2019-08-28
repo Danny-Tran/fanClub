@@ -15,7 +15,7 @@ class Text extends Component {
       enter={{
         opacity:[1],
         rotate:[360],
-        timing:{duration:1000, ease:easePolyOut}
+        timing:{duration:1100, ease:easePolyOut}
       }}
     >
       {({opacity,rotate}) =>{
