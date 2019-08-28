@@ -25,7 +25,7 @@ class Stripe extends Component {
         left:600,
         rotate:25,
         top:-498,
-        delay:400
+        delay:300
 
       }
     ]
