@@ -45,7 +45,7 @@ class Text extends Component {
         opacity:[1],
         x:[273],
         y:[450],
-        timing:{duration:500, ease:easePolyOut}
+        timing:{duration:400, ease:easePolyOut}
       }}
     >
       {({opacity, x, y}) =>{
@@ -75,7 +75,7 @@ class Text extends Component {
         opacity:[1],
         x:[273],
         y:[586],
-        timing:{delay:300, duration:500, ease:easePolyOut}
+        timing:{delay:200, duration:500, ease:easePolyOut}
       }}
     >
       {({opacity, x, y}) =>{
@@ -101,7 +101,7 @@ class Text extends Component {
       }}
       enter={{
         opacity:[1],
-        timing:{delay:800, duration:500, ease:easePolyOut}
+        timing:{delay:700, duration:500, ease:easePolyOut}
       }}
     >
       {({opacity}) =>{
