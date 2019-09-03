@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { DataSnapshot } from '@firebase/database';
 
 export const Tag = (props) => {
   const template = <div
@@ -25,4 +26,15 @@ export const Tag = (props) => {
   } else {
     return template
   }
+}
+
+export const firebaseLooper = (snapshot) => {
+  const data = [];
+  DataSnapshot.forEach((childSnapshot) =>{
+    data.push({
+      ...childSnapshot.val(),
+      id: childSnapshot.key
+    })
+  })
+  return data
 }
