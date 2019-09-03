@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { firebaseMatches } from '../../../firebase'
-import { firebaseLooper } from '../../ui/misc'
+import { firebaseLooper,reverseArray } from '../../ui/misc'
 
 class Blocks extends Component {
 
@@ -12,7 +12,9 @@ class Blocks extends Component {
     firebaseMatches.limitToLast(6).once('value').then((snapshot) => {
       const matches = firebaseLooper(snapshot)
 
-      console.log(matches)
+      this.setState({
+        matches:reverseArray(matches)
+      })
     })
   }
 
@@ -22,6 +24,9 @@ class Blocks extends Component {
     </div>
   )
   render() {
+
+    console.log(this.state)
+
     return (
       <div className='home_matches'>
         {this.showMatches(this.state.matches)}

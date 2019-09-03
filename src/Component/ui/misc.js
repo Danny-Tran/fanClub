@@ -38,3 +38,12 @@ export const firebaseLooper = (snapshot) => {
   })
   return data
 }
+
+export const reverseArray = (actualArray) => {
+  let reverseArray = [];
+
+  for(let i = actualArray.length-1; i>=0; i--){
+    reverseArray.push(actualArray[i])
+  }
+  return reverseArray
+}
