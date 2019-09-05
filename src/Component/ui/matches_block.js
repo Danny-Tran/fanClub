@@ -11,6 +11,7 @@ const MatchesBlock = ({match}) => {
       </div>
 
       <div className="match_wrapper">
+
         <div className="match_top">
           <div className="left">
             <div className="icon" style={{background:`url(/images/team_icons/${match.localThmb}.png)`}}></div>
@@ -19,7 +20,7 @@ const MatchesBlock = ({match}) => {
 
           <div className="right">
             {match.final ? match.resultLocal: '-'}
-          </div>
+          </div>          
         </div>
 
         <div className="match_bottom">
@@ -32,6 +33,7 @@ const MatchesBlock = ({match}) => {
             {match.final ? match.resultAway: '-'}
           </div>
         </div>
+
       </div>
 
     </div>
