@@ -26,7 +26,7 @@ class Blocks extends Component {
       <Slide bottom key={match.id}>
         <div className='item'>
           <div className='wrapper'>
-            <MatchesBlock match={match}/>
+            <MatchesBlock match={match} />
           </div>
         </div>
       </Slide>
