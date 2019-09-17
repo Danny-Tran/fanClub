@@ -13,7 +13,19 @@ class MeetPlayers extends Component {
       <div className='home_meetplayers'
         style={{background:`#ffffff url(${Stripes})`}}
       >
-        dsakjhdkjahd
+        <div className='container'>
+          <div className='home_meetplayers_wrapper'>
+
+            <div className='home_card_wrapper'>
+              card
+            </div>
+            
+            <div className='home_text_wrapper'>
+              text
+            </div>
+
+          </div>
+        </div>
       </div>
     );
   }
