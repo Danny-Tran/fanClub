@@ -19,9 +19,49 @@ class MeetPlayers extends Component {
             <div className='home_card_wrapper'>
               card
             </div>
-            
+
             <div className='home_text_wrapper'>
-              text
+              <div>
+                <Tag
+                  bck="#0e1731"
+                  size="100px"
+                  color="#ffffff"
+                  add={{
+                    display:'inline-block',
+                    marginBottom:'20px',
+                  }}
+                >
+                  Meet
+                </Tag>
+              </div>
+
+              <div>
+                <Tag
+                  bck="#0e1731"
+                  size="100px"
+                  color="#ffffff"
+                  add={{
+                    display:'inline-block',
+                    marginBottom:'20px',
+                  }}
+                >
+                  The
+                </Tag>
+              </div>
+
+              <div>
+                <Tag
+                  bck="#0e1731"
+                  size="100px"
+                  color="#ffffff"
+                  add={{
+                    display:'inline-block',
+                    marginBottom:'20px',
+                  }}
+                >
+                  Players
+                </Tag>
+              </div>
             </div>
 
           </div>
