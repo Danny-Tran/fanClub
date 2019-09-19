@@ -32,14 +32,25 @@ class HomeCards extends Component {
       <Animate
         key={i}
         show={this.props.show}
-        start = {{
+        start={{
           left:0,
           bottom:0
         }}
+        enter={{
+          left:[card.left],
+          bottom:[card.bottom],
+          timing:{duration:1000, ease: easePolyOut}
+        }}
       >
-        {({})=>{
+        {({left, bottom})=>{
           return(
-            <div>
+            <div
+              style={{
+                position: 'absolute',
+                left,
+                bottom
+              }}
+            >
               div
             </div>
           )
