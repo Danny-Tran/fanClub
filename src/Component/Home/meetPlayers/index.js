@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Stripes from '../../../Resources/images/stripes.png'
 import { Tag } from '../../ui/misc'
 import Reveal from 'react-reveal/Reveal'
+import HomeCards from './cards'
 
 class MeetPlayers extends Component {
 
@@ -28,7 +29,7 @@ class MeetPlayers extends Component {
             <div className='home_meetplayers_wrapper'>
 
               <div className='home_card_wrapper'>
-                card
+                <HomeCards/>
               </div>
 
               <div className='home_text_wrapper'>
