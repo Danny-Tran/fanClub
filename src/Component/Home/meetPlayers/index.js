@@ -6,7 +6,7 @@ import Reveal from 'react-reveal/Reveal'
 class MeetPlayers extends Component {
 
   state = {
-
+    show:false
   }
 
   render() {
@@ -14,7 +14,9 @@ class MeetPlayers extends Component {
       <Reveal
         fraction={0.7}
         onReveal={() => {
-
+          this.setState({
+            show:true
+          })
         }}
       
       >
