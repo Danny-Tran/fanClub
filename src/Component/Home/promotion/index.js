@@ -1,4 +1,5 @@
 import React from 'react';
+import PromotionAnimation from './Animation'
 
 const Promotion = () => {
   return (
@@ -6,6 +7,7 @@ const Promotion = () => {
       style={{background:'white'}}
     >
       <div className='container'>
+        <PromotionAnimation/>
 
       </div>
       
