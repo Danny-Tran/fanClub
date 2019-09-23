@@ -40,7 +40,12 @@ class Enroll extends Component {
               Enter your email
             </div>
             <div className='enroll_input'>
-
+              <FormField
+                id={'email'}
+                formdata={this.state.formdata.email}
+              
+              
+              />
             </div>
           </form>
         </div>
