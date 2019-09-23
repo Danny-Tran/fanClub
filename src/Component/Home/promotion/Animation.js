@@ -2,6 +2,8 @@ import React from 'react';
 import Zoom from 'react-reveal/Zoom'
 import Jersey from '../../../Resources/images/jersey.jpg'
 
+
+// animated component 
 const PromotionAnimation = () => {
   return (
     <div className='promotion_animation'>
@@ -16,7 +18,11 @@ const PromotionAnimation = () => {
       </div>
 
       <div className='right'>
+        <Zoom>
+          <div style={{background:`url(${Jersey}) no-repeat `}}>
 
+          </div>
+        </Zoom>
       </div>
     </div>
   );
