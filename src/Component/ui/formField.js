@@ -4,12 +4,14 @@ const FormField = ({formdata,id}) => {
 
   const renderTemplate = () => {
     let formTemplate = null;
-    
+
     switch(formdata.element) {
       case('input'):
         formTemplate = (
           <div>
-            input with something
+            <input
+              {...formdata.config}
+            />
           </div>
         )
 
