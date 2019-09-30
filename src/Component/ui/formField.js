@@ -9,7 +9,7 @@ const FormField = ({formdata,id}) => {
       case('input'):
         formTemplate = (
           <div>
-            < input
+            <input
               {...formdata.config}
             />
           </div>
