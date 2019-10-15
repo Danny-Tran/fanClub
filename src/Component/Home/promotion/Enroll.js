@@ -29,10 +29,14 @@ class Enroll extends Component {
   // this function will update the form
   updateForm(element) {
     const newFormdata = {...this.state.formdata}
-    const newElement = {...this.newFormdata[element.id]}
+    const newElement = {...newFormdata[element.id]}
 
     newElement.value = element.event.target.value
     newFormdata[element.id] = newElement
+
+    this.setState ({
+      formdata: newFormdata
+    })
   }
 
   // function that will submit user email into database
