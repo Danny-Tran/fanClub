@@ -27,8 +27,8 @@ class Enroll extends Component {
   }
   
   // this function will update the form
-  updateForm() {
-
+  updateForm(element) {
+    console.log(element)
   }
 
   // function that will submit user email into database
