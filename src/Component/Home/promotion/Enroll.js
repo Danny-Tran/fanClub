@@ -26,6 +26,11 @@ class Enroll extends Component {
     }
   }
   
+  // this function will update the form
+  updateForm() {
+
+  }
+
   // function that will submit user email into database
   submitForm() {
     
@@ -43,7 +48,7 @@ class Enroll extends Component {
               <FormField
                 id={'email'}
                 formdata={this.state.formdata.email}
-              
+                change={(element)=>this.updateForm(element)}
               
               />
             </div>

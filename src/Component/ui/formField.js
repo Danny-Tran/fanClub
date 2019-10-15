@@ -11,6 +11,7 @@ const FormField = ({formdata,id}) => {
           <div>
             <input
               {...formdata.config}
+              value={formdata.value}
             />
           </div>
         )
