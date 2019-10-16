@@ -26,7 +26,7 @@ class Enroll extends Component {
     }
   }
   
-  // this function will update the form and validate email passing from misc
+  // this function will update the form and validate email passing from misc coponents
   updateForm(element) {
     const newFormdata = {...this.state.formdata}
     const newElement = {...newFormdata[element.id]}
