@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import FormField from '../../ui/formField';
-
+import { validate } from '../../ui/misc';
 
 class Enroll extends Component {
 
@@ -32,8 +32,11 @@ class Enroll extends Component {
     const newElement = {...newFormdata[element.id]}
 
     newElement.value = element.event.target.value
-    newFormdata[element.id] = newElement
 
+    let valiData = validate(newElement)
+    console.log(valiData)
+    
+    newFormdata[element.id] = newElement
     this.setState ({
       formdata: newFormdata
     })
