@@ -47,3 +47,7 @@ export const reverseArray = (actualArray) => {
   }
   return reverseArray
 }
+
+export const validate = () => {
+  
+}
