@@ -17,7 +17,7 @@ class Enroll extends Component {
           placeholder:'Enter your email'
         },
         validation:{
-          require:true,
+          required:true,
           email:true
         },
         valid:false,
@@ -26,17 +26,18 @@ class Enroll extends Component {
     }
   }
   
-  // this function will update the form
+  // this function will update the form and validate email passing from misc
   updateForm(element) {
     const newFormdata = {...this.state.formdata}
     const newElement = {...newFormdata[element.id]}
 
     newElement.value = element.event.target.value
 
-    let valiData = validate(newElement)
-    console.log(valiData)
-    
+    let validData = validate(newElement)
+    newElement.valid = validData[0]
+    newElement.validationMessage = validData[1]
     newFormdata[element.id] = newElement
+    console.log(newFormdata)
     this.setState ({
       formdata: newFormdata
     })
@@ -59,7 +60,7 @@ class Enroll extends Component {
               <FormField
                 id={'email'}
                 formdata={this.state.formdata.email}
-                change={(element)=>this.updateForm(element)}
+                change={ (element) => this.updateForm(element) }
               
               />
             </div>
