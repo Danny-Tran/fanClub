@@ -12,7 +12,7 @@ const FormField = ({formdata,id,change}) => {
             <input
               {...formdata.config}
               value={formdata.value}
-              onChange={(event)=> change({event,id})}
+              onChange={(event) => change({event,id})}
             />
           </div>
         )

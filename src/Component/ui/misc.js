@@ -51,7 +51,7 @@ export const reverseArray = (actualArray) => {
 // Validate function that will check for email address enter by user
 export const validate = (element) => {
   let error = [true,'']
-
+// add checking condition, validating user input
   if(element.validation.required){
     const valid = element.value.trim() !== '';
     const message = `${!valid ? 'This field is required' : ''}`
