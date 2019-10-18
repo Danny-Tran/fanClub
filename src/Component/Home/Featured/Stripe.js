@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { easePolyOut } from 'd3-ease'
 import Animate from 'react-move/Animate'
 
+// tripe coponent that have setsate and reload state to show animation
 class Stripe extends Component {
 
   state = {

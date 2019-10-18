@@ -5,7 +5,7 @@ import MatchesBlock from '../../ui/matches_block'
 import Slide from 'react-reveal/Slide'
 
 
-component block that handle match and loadingg from firebase
+// component block that handle match and loadingg from firebase
 class Blocks extends Component {
 
   state = {
