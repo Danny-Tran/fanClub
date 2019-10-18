@@ -3,7 +3,7 @@ import Zoom from 'react-reveal/Zoom'
 import Jersey from '../../../Resources/images/jersey.jpg'
 
 
-// animated component 
+// animated component  
 const PromotionAnimation = () => {
   return (
     <div className='promotion_animation'>

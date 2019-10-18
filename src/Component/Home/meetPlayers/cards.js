@@ -28,6 +28,8 @@ class HomeCards extends Component {
     ]
   }
 
+  // player card section, currently just display one card but 
+  // can put in an array to loop through multiple cards
   showAnimateCards = () => (
     this.state.cards.map((card,i) =>(
       <Animate
